@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | Interview Mate</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(0, 205, 190, 0.10),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 85% 80%,
+                    rgba(0, 150, 160, 0.08),
+                    transparent 35%
+                ),
+                #020d12;
+
+            color: #ffffff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 25px;
+        }
+
+
+        /* =========================================
+           MAIN CONTAINER
+        ========================================= */
+
+        .signup-container {
+
+            width: 100%;
+            max-width: 1150px;
+
+            min-height: 700px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            border: 1px solid rgba(0, 205, 195, 0.20);
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            background: rgba(3, 16, 21, 0.96);
+
+            box-shadow:
+                0 25px 80px rgba(0, 0, 0, 0.55);
+        }
+
+
+        /* =========================================
+           LEFT SIDE
+        ========================================= */
+
+        .left-section {
+
+            padding: 50px;
+
+            background:
+                radial-gradient(
+                    circle at 50% 70%,
+                    rgba(0, 190, 180, 0.13),
+                    transparent 40%
+                ),
+                linear-gradient(
+                    145deg,
+                    #03171c,
+                    #020b10
+                );
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+
+            font-size: 22px;
+
+            font-weight: bold;
+
+            margin-bottom: 70px;
+        }
+
+
+        .logo-box {
+
+            width: 38px;
+            height: 38px;
+
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #08c7c2,
+                    #06b9d3
+                );
+
+            font-size: 17px;
+
+            box-shadow:
+                0 0 25px rgba(0, 205, 195, 0.30);
+        }
+
+
+        .logo span {
+
+            color: #09c9c1;
+        }
+
+
+        /* AI LABEL */
+
+        .tag {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            padding: 10px 16px;
+
+            border-radius: 25px;
+
+            border: 1px solid rgba(0, 205, 195, 0.35);
+
+            color: #78e9e2;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            letter-spacing: 0.5px;
+
+            margin-bottom: 28px;
+        }
+
+
+        .tag::before {
+
+            content: "●";
+
+            color: #28e88b;
+
+            margin-right: 9px;
+        }
+
+
+        /* LEFT HEADING */
+
+        .left-section h1 {
+
+            font-size: 46px;
+
+            line-height: 1.1;
+
+            margin-bottom: 22px;
+        }
+
+
+        /* NO BLUE / NO PURPLE */
+
+        .gradient-text {
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #08c7c2,
+                    #06d6c9,
+                    #5ce2d9
+                );
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        .description {
+
+            color: #a9bec8;
+
+            line-height: 1.7;
+
+            max-width: 450px;
+
+            margin-bottom: 40px;
+        }
+
+
+        /* FEATURES */
+
+        .features {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 22px;
+        }
+
+
+        .feature {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+        }
+
+
+        .feature-icon {
+
+            width: 48px;
+            height: 48px;
+
+            border-radius: 12px;
+
+            background:
+                rgba(0, 194, 188, 0.08);
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            font-size: 23px;
+
+            border:
+                1px solid rgba(0, 205, 195, 0.20);
+        }
+
+
+        .feature-text strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: #ffffff;
+        }
+
+
+        .feature-text small {
+
+            color: #78929d;
+        }
+
+
+        /* COPYRIGHT */
+
+        .copyright {
+
+            position: absolute;
+
+            bottom: 22px;
+
+            left: 50px;
+
+            color: #526d77;
+
+            font-size: 11px;
+        }
+
+
+        /* =========================================
+           RIGHT SIDE
+        ========================================= */
+
+        .right-section {
+
+            padding: 45px 55px;
+
+            background:
+                #030d13;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .signup-box {
+
+            width: 100%;
+
+            max-width: 460px;
+        }
+
+        .signup-back-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 38px;
+            padding: 0 14px;
+            margin-bottom: 18px;
+            border: 1px solid #24414a;
+            border-radius: 9px;
+            background: transparent;
+            color: #dce8eb;
+            font: inherit;
+            cursor: pointer;
+        }
+
+        .signup-back-btn:hover { border-color: #00c9b7; color: #21e0cf; }
+
+
+        /* WELCOME ICON */
+
+        .welcome-icon {
+
+            width: 55px;
+            height: 55px;
+
+            border-radius: 15px;
+
+            background: #06323a;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            font-size: 27px;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* HEADING */
+
+        .signup-box h2 {
+
+            font-size: 32px;
+
+            margin-bottom: 9px;
+        }
+
+
+        .subtitle {
+
+            color: #819ca8;
+
+            margin-bottom: 27px;
+        }
+
+
+        /* =========================================
+           FORM
+        ========================================= */
+
+        .form-group {
+
+            margin-bottom: 14px;
+        }
+
+
+        label {
+
+            display: block;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            margin-bottom: 8px;
+
+            color: #e6f0f3;
+        }
+
+
+        input {
+
+            width: 100%;
+
+            height: 46px;
+
+            padding: 0 15px;
+
+            border-radius: 10px;
+
+            border: 1px solid #18333d;
+
+            outline: none;
+
+            background: #06141b;
+
+            color: #ffffff;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+
+        input::placeholder {
+
+            color: #607a84;
+        }
+
+
+        input:focus {
+
+            border-color: #05c8bd;
+
+            box-shadow:
+                0 0 0 3px
+                rgba(0, 205, 195, 0.10);
+        }
+
+
+        /* =========================================
+           PASSWORD
+        ========================================= */
+
+        .password-box {
+
+            position: relative;
+        }
+
+
+        .password-box input {
+
+            padding-right: 50px;
+        }
+
+
+        .show-password {
+
+            position: absolute;
+
+            right: 15px;
+
+            top: 14px;
+
+            cursor: pointer;
+
+            color: #7f9aa4;
+
+            font-size: 17px;
+        }
+
+
+        .show-password:hover {
+
+            color: #08c9c0;
+        }
+
+
+        /* =========================================
+           CAPTCHA
+        ========================================= */
+
+        .captcha-box {
+
+            height: 46px;
+
+            border:
+                1px solid #18333d;
+
+            border-radius: 10px;
+
+            background: #06141b;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 0 14px;
+
+            margin-bottom: 8px;
+        }
+
+
+        #captchaText {
+
+            font-weight: bold;
+
+            letter-spacing: 5px;
+
+            color: #5ce2d9;
+
+            font-size: 17px;
+        }
+
+
+        .refresh-captcha {
+
+            border: none;
+
+            background: transparent;
+
+            color: #66aeb2;
+
+            font-size: 22px;
+
+            cursor: pointer;
+        }
+
+
+        .refresh-captcha:hover {
+
+            color: #08d2c5;
+        }
+
+
+        /* =========================================
+           TERMS
+        ========================================= */
+
+        .terms {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 9px;
+
+            margin: 16px 0;
+
+            color: #819ca8;
+
+            font-size: 12px;
+
+            line-height: 1.5;
+        }
+
+
+        .terms input {
+
+            width: 15px;
+
+            height: 15px;
+
+            margin-top: 2px;
+
+            accent-color: #08c9c0;
+        }
+
+
+        .terms a {
+
+            color: #08c9c0;
+
+            text-decoration: none;
+        }
+
+
+        .terms a:hover {
+
+            text-decoration: underline;
+        }
+
+
+        /* =========================================
+           CREATE ACCOUNT BUTTON
+        ========================================= */
+
+        .signup-btn {
+
+            width: 100%;
+
+            height: 52px;
+
+            border: none;
+
+            border-radius: 11px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #08c8bc,
+                    #06b9d3
+                );
+
+            color: #001315;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+            box-shadow:
+                0 10px 25px
+                rgba(0, 195, 185, 0.18);
+        }
+
+
+        .signup-btn:hover {
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(0, 195, 185, 0.30);
+        }
+
+
+        /* =========================================
+           SIGN IN
+        ========================================= */
+
+        .login-text {
+
+            text-align: center;
+
+            color: #7f9aa4;
+
+            font-size: 13px;
+
+            margin-top: 18px;
+        }
+
+
+        .login-text a {
+
+            color: #08c9c0;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+
+        .login-text a:hover {
+
+            color: #5ce2d9;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 850px) {
+
+            body {
+
+                padding: 15px;
+            }
+
+
+            .signup-container {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .left-section {
+
+                display: none;
+            }
+
+
+            .right-section {
+
+                padding: 35px 25px;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            .right-section {
+
+                padding: 30px 20px;
+            }
+
+
+            .signup-box h2 {
+
+                font-size: 28px;
+            }
+        }
+
+        html, body { min-height: 100%; height: auto; }
+        body { overflow-x: hidden; overflow-y: auto; }
+        @media (max-height: 760px) {
+            body { align-items: flex-start; }
+            .signup-container { margin: 0 auto; }
+        }
+
+    </style>
+    <link rel="stylesheet" href="design.css?v=20261103-feature-pages-v1">
+    <link rel="stylesheet" href="theme.css?v=20261102-robots">
+    <script>
+        try {
+            const savedTheme = localStorage.getItem("interviewMateTheme:guest");
+            const legacyLight = localStorage.getItem("interviewMateLightMode:guest") === "true";
+            document.documentElement.dataset.theme = savedTheme || (legacyLight ? "light" : "dark");
+        } catch (error) {
+            document.documentElement.dataset.theme = "dark";
+        }
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <div class="signup-container">
+
+
+        <!-- =========================================
+             LEFT SIDE
+        ========================================= -->
+
+        <div class="left-section">
+
+
+            <a class="logo" href="index.html">
+
+                <div class="logo-box">
+                    M
+                </div>
+
+                Interview <span>Mate</span>
+
+            </a>
+
+
+            <div class="tag">
+
+                AI-POWERED CAREER PREPARATION
+
+            </div>
+
+
+            <h1>
+
+                Create Your Account<br>
+
+                <span class="gradient-text">
+                    & Take the First Step
+                </span>
+
+            </h1>
+
+
+            <p class="description">
+
+                Build your profile, unlock personalized learning, and start your journey toward a better career.
+
+            </p>
+
+
+            <div class="features">
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        🧠
+                    </div>
+
+                    <div class="feature-text">
+
+                        <strong>
+                            AI Aptitude
+                        </strong>
+
+                        <small>
+                            Adaptive questions & instant feedback
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        💻
+                    </div>
+
+                    <div class="feature-text">
+
+                        <strong>
+                            AI Coding
+                        </strong>
+
+                        <small>
+                            Real-world programming challenges
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        🤖
+                    </div>
+
+                    <div class="feature-text">
+
+                        <strong>
+                            AI HR Interview
+                        </strong>
+
+                        <small>
+                            Practice interviews with AI feedback
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="auth-illustration signup-illustration" aria-hidden="true">
+                <div class="auth-plant"><i></i><i></i><i></i><b></b></div>
+                <div class="auth-stack"><i></i><i></i><i></i></div>
+                <div class="auth-laptop"><span>M</span></div>
+                <div class="auth-robot"><i></i><i></i><b></b><span></span></div>
+                <div class="auth-desk"></div>
+                <span class="auth-doodle">Better<br>Skills<br>Brighter Future <b>♡</b></span>
+            </div>
+
+
+            <div class="copyright">
+
+                © 2026 Interview Mate. All rights reserved.
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =========================================
+             RIGHT SIDE
+        ========================================= -->
+
+        <div class="right-section">
+
+            <a class="auth-switch-top" href="index.html#login">Already have an account? <strong>Login →</strong></a>
+
+
+            <div class="signup-box">
+
+                <div class="auth-card-tag">♙ Sign Up</div>
+
+
+                <h2>
+                    Create your account
+                </h2>
+
+
+                <p class="subtitle">
+
+                    Begin your journey towards placement success.
+
+                </p>
+
+
+
+                <!-- =================================
+                     SIGNUP FORM
+                ================================= -->
+
+                <form id="signupForm">
+
+
+                    <!-- FULL NAME -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Phone Number (Optional)
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+
+                    <!-- EDUCATION DETAILS -->
+
+                    <div class="form-group">
+                        <label for="college">College Name (Optional)</label>
+                        <input type="text" id="college" placeholder="College name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Course (Optional)</label>
+                        <input type="text" id="course" placeholder="Course (e.g. BCA)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">Year (Optional)</label>
+                        <input type="text" id="year" placeholder="Year (e.g. 3rd Year)">
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Password
+                        </label>
+
+                        <div class="password-box">
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Create a password"
+                                required
+                            >
+
+                            <span
+                                class="show-password"
+                                onclick="togglePassword('password', this)"
+                            >
+                                👁
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Confirm Password
+                        </label>
+
+                        <div class="password-box">
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm your password"
+                                required
+                            >
+
+                            <span
+                                class="show-password"
+                                onclick="togglePassword('confirmPassword', this)"
+                            >
+                                👁
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CAPTCHA -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Security Verification
+                        </label>
+
+
+                        <div class="captcha-box">
+
+                            <span id="captchaText"></span>
+
+
+                            <button
+                                type="button"
+                                class="refresh-captcha"
+                                onclick="generateCaptcha()"
+                            >
+                                ↻
+                            </button>
+
+                        </div>
+
+
+                        <input
+                            type="text"
+                            id="captchaInput"
+                            placeholder="Enter the code shown above"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- TERMS -->
+
+                    <div class="terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+
+                        <span>
+
+                            I agree to the
+
+                            <a href="#signupLegalDialog" onclick="event.preventDefault(); showSignupInfo('terms')">
+                                Terms & Conditions
+                            </a>
+
+                            and
+
+                            <a href="#signupLegalDialog" onclick="event.preventDefault(); showSignupInfo('privacy')">
+                                Privacy Policy
+                            </a>
+
+                            of Interview Mate.
+
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- CREATE ACCOUNT -->
+
+                    <button
+                        type="submit"
+                        class="signup-btn"
+                    >
+
+                        Create Account →
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- SIGN IN -->
+
+                <p class="login-text">
+
+                    Already have an account?
+
+                    <a href="index.html">
+                        Sign in
+                    </a>
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <dialog id="signupLegalDialog" class="signup-legal-dialog" aria-labelledby="signupLegalTitle">
+        <div class="signup-legal-card">
+            <button type="button" class="signup-legal-close" aria-label="Close details" onclick="document.getElementById('signupLegalDialog').close()">×</button>
+            <h2 id="signupLegalTitle">Interview Mate information</h2>
+            <p id="signupLegalCopy">For current Terms & Conditions and Privacy Policy details, contact Interview Mate support.</p>
+            <a class="signup-legal-contact" href="mailto:supportinterviewmate@gmail.com?subject=Interview%20Mate%20policy%20details">Contact Support →</a>
+        </div>
+    </dialog>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script>
+
+
+        /* =========================================
+           SHOW / HIDE PASSWORD
+        ========================================= */
+
+        function togglePassword(id, element) {
+
+            const password =
+                document.getElementById(id);
+
+
+            if (password.type === "password") {
+
+                password.type = "text";
+
+                element.textContent = "🙈";
+
+            }
+
+            else {
+
+                password.type = "password";
+
+                element.textContent = "👁";
+
+            }
+
+        }
+
+
+
+        /* =========================================
+           CAPTCHA
+        ========================================= */
+
+        let captchaCode = "";
+
+
+        function generateCaptcha() {
+
+            const chars =
+                "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+
+
+            captchaCode = "";
+
+
+            for (let i = 0; i < 6; i++) {
+
+                captchaCode +=
+                    chars.charAt(
+                        Math.floor(
+                            Math.random() * chars.length
+                        )
+                    );
+
+            }
+
+
+            document.getElementById(
+                "captchaText"
+            ).textContent = captchaCode;
+
+        }
+
+
+        function showSignupInfo(kind) {
+            const dialog = document.getElementById("signupLegalDialog");
+            const title = document.getElementById("signupLegalTitle");
+            const copy = document.getElementById("signupLegalCopy");
+            const topic = kind === "privacy" ? "Privacy Policy" : "Terms & Conditions";
+            title.textContent = topic;
+            copy.textContent = `For current ${topic} details, contact Interview Mate support.`;
+            dialog.showModal();
+        }
+
+        generateCaptcha();
+
+
+
+        /* =========================================
+           SIGN UP
+        ========================================= */
+
+        document
+            .getElementById("signupForm")
+            .addEventListener(
+                "submit",
+                async function(event) {
+
+                    event.preventDefault();
+
+
+                    const name =
+                        document
+                            .getElementById("name")
+                            .value
+                            .trim();
+
+
+                    const email =
+                        document
+                            .getElementById("email")
+                            .value
+                            .trim();
+
+
+                    const phone =
+                        document
+                            .getElementById("phone")
+                            .value
+                            .trim();
+
+                    const college = document.getElementById("college").value.trim();
+                    const course = document.getElementById("course").value.trim();
+                    const year = document.getElementById("year").value.trim();
+
+
+                    const password =
+                        document
+                            .getElementById("password")
+                            .value;
+
+
+                    const confirmPassword =
+                        document
+                            .getElementById("confirmPassword")
+                            .value;
+
+
+                    const captchaInput =
+                        document
+                            .getElementById("captchaInput")
+                            .value
+                            .trim();
+
+
+
+                    /* PASSWORD MATCH */
+
+                    if (
+                        password !==
+                        confirmPassword
+                    ) {
+
+                        alert(
+                            "Passwords do not match."
+                        );
+
+                        return;
+                    }
+
+
+
+                    /* PASSWORD LENGTH */
+
+                    if (password.length < 6) {
+
+                        alert(
+                            "Password must contain at least 6 characters."
+                        );
+
+                        return;
+                    }
+
+
+
+                    /* CAPTCHA */
+
+                    if (
+                        captchaInput !== captchaCode
+                    ) {
+
+                        alert(
+                            "Incorrect CAPTCHA. Please try again."
+                        );
+
+                        generateCaptcha();
+
+                        document
+                            .getElementById("captchaInput")
+                            .value = "";
+
+                        return;
+                    }
+
+
+
+                    /* SEND TO FLASK BACKEND */
+
+                    try {
+
+                        const apiRoot = window.INTERVIEW_MATE_API || (window.location.protocol === "file:" ? "http://127.0.0.1:5000" : window.location.origin);
+                        const response =
+                            await fetch(
+                                apiRoot + "/register",
+                                {
+                                    method: "POST",
+
+                                    headers: {
+                                        "Content-Type":
+                                            "application/json"
+                                    },
+
+                                    body:
+                                        JSON.stringify({
+
+                                            name: name,
+
+                                            email: email,
+
+                                            phone: phone,
+
+                                            college: college,
+
+                                            course: course,
+
+                                            year: year,
+
+                                            password: password
+
+                                        })
+                                }
+                            );
+
+
+                        const data =
+                            await response.json();
+
+
+                        if (!response.ok) {
+
+                            alert(
+                                data.message ||
+                                "Registration failed."
+                            );
+
+                            return;
+                        }
+
+
+                        alert(
+                            "Account created successfully!"
+                        );
+
+
+                        window.location.href =
+                            "index.html";
+
+                    }
+
+
+                    catch (error) {
+
+                        console.error(error);
+
+
+                        alert(
+                            "Cannot connect to Interview Mate server.\n" +
+                            "Please make sure app.py is running."
+                        );
+
+                    }
+
+                }
+            );
+
+
+
+    </script>
+
+
+</body>
+
+</html>

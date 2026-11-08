@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview Mate | AI Career Preparation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design.css?v=20261103-feature-pages-v1">
+    <link rel="stylesheet" href="theme.css?v=20261102-robots">
+</head>
+
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="rbShell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2ffff"/><stop offset=".5" stop-color="#9fe9f2"/><stop offset="1" stop-color="#3f86a8"/></linearGradient>
+<linearGradient id="rbFace" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#06304a"/><stop offset="1" stop-color="#031825"/></linearGradient>
+<linearGradient id="rbGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#19f0e6"/><stop offset="1" stop-color="#00a9e8"/></linearGradient>
+</defs></svg>
+
+    <!-- =====================================================
+     INTERVIEW MATE LANDING PAGE
+===================================================== -->
+
+<section id="landingPage" class="landing-page">
+
+    <!-- NAVBAR -->
+    <nav class="landing-nav">
+
+        <div class="landing-logo">
+            <div class="logo-box">M</div>
+            <span>Interview <span>Mate</span></span>
+        </div>
+
+        <div class="landing-nav-links">
+            <a href="#landingHome">Home</a>
+            <a href="#whyInterviewMate">Why Us</a>
+            <a href="#landingFeatures">Features</a>
+            <a href="#landingPricing">Pricing</a>
+            <a href="#landingFAQDialog" onclick="event.preventDefault(); openLandingFAQ()">FAQ</a>
+        </div>
+
+        <div class="landing-nav-actions">
+            <button class="landing-theme-toggle" type="button" onclick="toggleDarkMode()" aria-label="Toggle light or dark theme" title="Toggle theme">☼ <span>☾</span></button>
+            <button class="landing-login-btn" type="button" onclick="openLoginPage()">Login</button>
+            <button class="landing-start-btn" type="button" onclick="showSignup()">Get Started <span>→</span></button>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <section id="landingHome" class="landing-hero">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                <span class="hero-dot"></span>
+                AI-POWERED CAREER COMPANION
+            </span>
+
+            <h1>
+                Prepare Smarter.
+                <br>
+                <span>Succeed Better.</span>
+            </h1>
+
+            <p>
+                Practice aptitude, coding and HR interviews with Interview Mate and build the confidence you need for your next opportunity.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button
+                    class="hero-primary-btn"
+                    onclick="showSignup()">
+                    Get Started →
+                </button>
+
+                <button
+                    class="hero-secondary-btn"
+                    onclick="openDemo()">
+                    ▶ &nbsp; Watch Demo
+                </button>
+
+            </div>
+
+            <div class="hero-note">
+                <span class="hero-people"><i>KM</i><i>AR</i><i>SP</i></span>
+                <span><strong>Join 10,000+ students</strong><br>already preparing for their future</span>
+            </div>
+
+        </div>
+
+
+        <!-- HERO VISUAL -->
+        <div class="hero-visual" aria-hidden="true">
+            <div class="hero-visual-glow"></div>
+            <div class="hero-callout hero-callout-left"><strong>Your Career Buddy</strong><span>for a brighter tomorrow</span></div>
+            <div class="hero-bot-wrap">
+                <svg class="hero-bot" viewBox="0 0 420 450" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="botShell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efffff"/><stop offset=".48" stop-color="#98e8f0"/><stop offset="1" stop-color="#397f9e"/></linearGradient>
+                        <linearGradient id="botFace" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#062b42"/><stop offset="1" stop-color="#031623"/></linearGradient>
+                        <linearGradient id="botGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0ff4e1"/><stop offset="1" stop-color="#00a9e8"/></linearGradient>
+                        <filter id="botShadow"><feGaussianBlur stdDeviation="12"/></filter>
+                    </defs>
+                    <ellipse cx="217" cy="420" rx="150" ry="20" fill="#00e7d5" opacity=".23" filter="url(#botShadow)"/>
+                    <path d="M204 76V43" stroke="#67d8e9" stroke-width="10" stroke-linecap="round"/>
+                    <circle cx="204" cy="31" r="15" fill="url(#botGlow)"/>
+                    <path d="M91 180a116 116 0 0 1 232 0" fill="none" stroke="#b9f7ff" stroke-width="20" stroke-linecap="round"/>
+                    <rect x="74" y="94" width="258" height="208" rx="76" fill="url(#botShell)"/>
+                    <rect x="92" y="112" width="222" height="169" rx="59" fill="url(#botFace)" stroke="#8df4ff" stroke-width="4"/>
+                    <path d="M146 197q16-24 32 0" fill="none" stroke="#00e6ef" stroke-width="10" stroke-linecap="round"/>
+                    <path d="M230 197q16-24 32 0" fill="none" stroke="#00e6ef" stroke-width="10" stroke-linecap="round"/>
+                    <path d="M174 225q29 31 58 0" fill="none" stroke="#43e6ef" stroke-width="8" stroke-linecap="round"/>
+                    <rect x="55" y="154" width="35" height="88" rx="17" fill="url(#botShell)"/>
+                    <rect x="316" y="154" width="35" height="88" rx="17" fill="url(#botShell)"/>
+                    <path d="M115 316q88-39 176 0l39 101H79z" fill="url(#botShell)"/>
+                    <path d="M159 329h88l28 59h-144z" fill="#13364c"/>
+                    <circle cx="203" cy="359" r="18" fill="url(#botGlow)"/>
+                    <path d="M137 414l-30 20m161-20 30 20" stroke="#77e7f0" stroke-width="19" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="hero-laptop" aria-hidden="true"><div class="laptop-screen"><span class="laptop-mark">M</span><i>Interview Mate</i></div><div class="laptop-base"></div></div>
+            <div class="hero-book-stack"><i></i><i></i><i></i></div>
+            <div class="hero-plant"><span></span><span></span><i></i><i></i><i></i></div>
+            <div class="hero-steps"><span>✦ <b>Learn</b></span><span>✓ <b>Practice</b></span><span>↗ <b>Grow</b></span></div>
+            <div class="hero-callout hero-callout-right"><span>Consistent practice</span><strong>Leads to big results <b>↗</b></strong></div>
+            <div class="hero-spark hero-spark-one">✦</div><div class="hero-spark hero-spark-two">✧</div>
+        </div>
+
+    </section>
+
+
+    <!-- WHY INTERVIEW MATE -->
+    <section id="whyInterviewMate" class="landing-section why-section">
+
+        <div class="landing-section-heading">
+
+            <span>— WHY CHOOSE INTERVIEW MATE? —</span>
+
+            <h2>
+                More Than Just Practice
+            </h2>
+
+            <p>
+                We help you prepare, improve and achieve your career goals with AI-powered tools and personalized feedback.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <div class="why-number">01</div>
+
+                <div class="why-icon">🧠</div>
+
+                <h3>AI-Powered Feedback</h3>
+
+                <p>
+                    Get personalized insights to improve your performance.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-number">02</div>
+
+                <div class="why-icon">📊</div>
+
+                <h3>Real Interview Experience</h3>
+
+                <p>
+                    Practice with AI and build your confidence.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-number">03</div>
+
+                <div class="why-icon">⚡</div>
+
+                <h3>Track Progress</h3>
+
+                <p>
+                    Monitor your growth with detailed analytics.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-number">04</div>
+
+                <div class="why-icon">🎯</div>
+
+                <h3>Flexible Learning</h3>
+
+                <p>
+                    Learn at your own pace, anytime and anywhere.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section id="landingFeatures" class="landing-section features-section">
+
+        <div class="landing-section-heading">
+
+            <span>WHAT'S INSIDE</span>
+
+            <h2>
+                Everything you need to prepare.
+            </h2>
+
+            <p>
+                Practice the most important interview rounds
+                from one simple platform.
+            </p>
+
+        </div>
+
+
+        <div class="landing-feature-grid">
+
+            <a class="landing-feature-card" href="#loginPage" onclick="event.preventDefault(); openLoginPage()">
+
+                <div class="feature-icon aptitude-icon">
+                    🧠
+                </div>
+
+                <h3>AI Aptitude</h3>
+
+                <p>
+                    Test your quantitative, logical and
+                    verbal reasoning skills.
+                </p>
+
+                <span>Practice →</span>
+
+            </a>
+
+
+            <a class="landing-feature-card" href="#loginPage" onclick="event.preventDefault(); openLoginPage()">
+
+                <div class="feature-icon coding-icon">
+                    ‹/›
+                </div>
+
+                <h3>AI Coding</h3>
+
+                <p>
+                    Solve programming challenges and
+                    improve your problem-solving skills.
+                </p>
+
+                <span>Practice →</span>
+
+            </a>
+
+
+            <a class="landing-feature-card" href="#loginPage" onclick="event.preventDefault(); openLoginPage()">
+
+                <div class="feature-icon hr-icon">
+                    🎤
+                </div>
+
+                <h3>AI HR Interview</h3>
+
+                <p>
+                    Practice common HR questions and
+                    prepare for real interview conversations.
+                </p>
+
+                <span>Practice →</span>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+    <section id="landingPricing" class="subscription-section">
+        <div class="landing-section-heading">
+            <span>FLEXIBLE PLANS</span>
+            <h2>Choose Your Plan</h2>
+            <p>Flexible plans for every learner. Start free and upgrade anytime.</p>
+        </div>
+        <div class="subscription-plans">
+            <article class="subscription-card">
+                <h3>Basic</h3>
+                <div class="subscription-price">₹20 <span>/ month</span></div>
+                <ul><li>Aptitude Practice</li><li>Coding Practice (Limited)</li><li>HR Interview (Limited)</li><li>1 Month Access</li></ul>
+                <button class="subscribe-btn" type="button" onclick="startSubscription('basic')">Get Started →</button>
+            </article>
+            <article class="subscription-card featured">
+                <div class="popular-badge">Most Popular</div>
+                <h3>Standard</h3>
+                <div class="subscription-price">₹30 <span>/ month</span></div>
+                <ul><li>Aptitude Practice</li><li>Coding Practice (Full Access)</li><li>HR Interview (Full Access)</li><li>Progress Analytics</li></ul>
+                <button class="subscribe-btn" type="button" onclick="startSubscription('standard')">Get Started →</button>
+            </article>
+            <article class="subscription-card">
+                <h3>Premium</h3>
+                <div class="subscription-price">₹40 <span>/ month</span></div>
+                <ul><li>All Features in Standard</li><li>Advanced AI Feedback</li><li>Priority Support</li><li>Exclusive Resources</li></ul>
+                <button class="subscribe-btn" type="button" onclick="startSubscription('premium')">Get Started →</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="landing-footer">
+
+        <div class="footer-brand">
+
+            <div class="landing-logo">
+
+                <div class="logo-box">M</div>
+
+                <span>
+                    Interview <span>Mate</span>
+                </span>
+
+            </div>
+
+            <p>
+                Your interview preparation companion.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#landingHome">Home</a>
+            <a href="#whyInterviewMate">Why Us</a>
+            <a href="#landingFeatures">Features</a>
+            <a href="#landingPricing">Pricing</a>
+            <a href="#landingFAQDialog" onclick="event.preventDefault(); openLandingFAQ()">FAQ</a>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 Interview Mate. All rights reserved.
+
+        </div>
+
+    </footer>
+
+    <!-- FAQ -->
+    <dialog id="landingFAQDialog" class="faq-dialog" aria-labelledby="landingFAQTitle">
+        <button class="faq-dialog-close" type="button" aria-label="Close FAQ" onclick="closeLandingFAQ()">×</button>
+        <section id="landingFAQ" class="landing-section faq-section">
+
+        <div class="landing-section-heading">
+
+            <span>FAQ</span>
+
+            <h2 id="landingFAQTitle">
+                Got questions?
+            </h2>
+
+            <p>
+                Here are some common questions about Interview Mate.
+            </p>
+
+        </div>
+
+
+        <div class="faq-container">
+
+            <details>
+                <summary>
+                    What is Interview Mate?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Interview Mate is an interview preparation
+                    platform where you can practice aptitude,
+                    coding and HR interview rounds.
+                </p>
+
+            </details>
+
+
+            <details>
+                <summary>
+                    How does the subscription work?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Choose a monthly plan and complete the
+                    subscription payment through Razorpay.
+                    Your Interview Mate features are then unlocked.
+                </p>
+
+            </details>
+
+
+            <details>
+                <summary>
+                    Can I practice multiple interview rounds?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Yes. Depending on your subscription,
+                    you can access the available aptitude,
+                    coding and HR interview modules.
+                </p>
+
+            </details>
+
+
+            <details>
+                <summary>
+                    Can I track my performance?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Yes. Interview Mate provides dashboard
+                    statistics and progress information for
+                    your preparation.
+                </p>
+
+            </details>
+
+        </div>
+
+        </section>
+    </dialog>
+
+</section>
+
+<dialog id="demoDialog" class="demo-dialog" aria-labelledby="demoTitle">
+    <div class="demo-modal">
+        <button class="demo-close" type="button" onclick="closeDemo()" aria-label="Close demo">×</button>
+        <span class="demo-kicker">A QUICK TOUR</span>
+        <h2 id="demoTitle">Your next interview starts here.</h2>
+        <p>Build confidence with short practice rounds and clear feedback.</p>
+        <div class="demo-steps">
+            <article><span>01</span><b>Choose a practice round</b><small>Aptitude, coding or HR interview.</small></article>
+            <article><span>02</span><b>Practice at your pace</b><small>Work through questions and coding challenges.</small></article>
+            <article><span>03</span><b>See how you improve</b><small>Review your score and next steps.</small></article>
+        </div>
+        <button class="demo-start" type="button" onclick="showSignup()">Create your account →</button>
+    </div>
+</dialog>
+
+<!-- =====================================================
+     LOGIN
+===================================================== -->
+
+<section id="loginPage" class="page login-page">
+
+    <div class="login-glow glow1"></div>
+    <div class="login-glow glow2"></div>
+
+    <div class="login-container">
+
+        <a class="auth-switch-top" href="signup.html">Don't have an account? <strong>Sign Up →</strong></a>
+
+        <!-- LEFT -->
+
+        <div class="login-hero">
+
+            <a class="logo" href="#landingHome" onclick="event.preventDefault(); backToLandingPage()">
+                <div class="logo-box">M</div>
+                <span>Interview <span>Mate</span></span>
+            </a>
+
+            <div class="ai-label">
+                <span></span>
+                AI-POWERED CAREER COMPANION
+            </div>
+
+            <h1>
+                Your Dream Career<br>
+                <b>Starts Here</b>
+            </h1>
+
+            <p>
+                Prepare smarter with AI-powered assessments, custom practice and personalized feedback. Build the skills you need, achieve your goals.
+            </p>
+
+            <div class="login-features">
+
+                <div class="login-feature">
+                    <div>🧠</div>
+                    <section>
+                        <strong>AI Aptitude</strong>
+                        <small>Adaptive questions & instant feedback</small>
+                    </section>
+                </div>
+
+                <div class="login-feature">
+                    <div>💻</div>
+                    <section>
+                        <strong>AI Coding</strong>
+                        <small>Real-world programming challenges</small>
+                    </section>
+                </div>
+
+                <div class="login-feature">
+                    <div>🎤</div>
+                    <section>
+                        <strong>AI HR Interview</strong>
+                        <small>Mock interviews with AI feedback</small>
+                    </section>
+                </div>
+
+            </div>
+
+            <div class="login-quote">
+                “The future belongs to those who prepare for it.”
+                <small>— Interview Mate</small>
+            </div>
+
+            <div class="auth-illustration" aria-hidden="true">
+                <div class="auth-plant"><i></i><i></i><i></i><b></b></div>
+                <div class="auth-stack"><i></i><i></i><i></i></div>
+                <div class="auth-laptop"><span>M</span></div>
+                <div class="auth-robot"><i></i><i></i><b></b><span></span></div>
+                <div class="auth-desk"></div>
+                <span class="auth-doodle">Learn<br>Practice<br>Grow <b>♡</b></span>
+            </div>
+
+        </div>
+
+
+        <!-- LOGIN CARD -->
+
+        <div class="login-card">
+
+            <div class="auth-card-tag">♙ Login</div>
+
+            <h2>Welcome back!</h2>
+
+            <p class="login-subtitle">
+                Sign in to continue your preparation journey
+            </p>
+
+            <form onsubmit="login(event)">
+
+                <label>Email Address</label>
+
+                <div class="input-box">
+                    <span>✉</span>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+
+                <label>Password</label>
+
+                <div class="input-box">
+
+                    <span>🔒</span>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="eye"
+                        onclick="togglePassword()">
+                        ◉
+                    </button>
+
+                </div>
+
+
+                <div class="login-options">
+
+                    <label class="remember">
+                    <input id="rememberMe" type="checkbox">
+                        Remember me
+                    </label>
+
+                    <button
+                        type="button"
+                        onclick="forgotPassword()"
+                        class="forgot">
+                        Forgot password?
+                    </button>
+
+                </div>
+
+
+                <button type="submit" class="primary-btn login-btn">
+                    Sign In
+                    <span>→</span>
+                </button>
+
+            </form>
+
+
+            <div class="login-signup">
+                Don't have an account?
+                    <a href="signup.html">Sign up</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     DASHBOARD
+===================================================== -->
+
+<section id="dashboard" class="dashboard page">
+
+    <aside class="sidebar">
+
+        <div class="side-logo">
+            <div class="logo-box">M</div>
+            <span>Interview <span>Mate</span></span>
+        </div>
+
+
+        <nav>
+
+            <button class="nav-item active"
+                onclick="showDashboard()">
+                <span>⌂</span> Dashboard
+            </button>
+
+            <button class="nav-item"
+                onclick="startAIAptitude()">
+                <span>◉</span> Aptitude
+            </button>
+
+            <button class="nav-item"
+                onclick="startAICoding()">
+                <span>⌘</span> Coding
+            </button>
+
+            <button class="nav-item"
+                onclick="startAIInterview()">
+                <span>◌</span> HR Interview
+            </button>
+
+            <button class="nav-item" onclick="startMockTest()">
+                <span>▣</span> Mock Tests
+            </button>
+
+            <button class="nav-item"
+                onclick="openProgress()">
+                <span>▥</span> Results
+            </button>
+
+            <button class="nav-item" onclick="openSubscriptionDetails()">
+                <span>♛</span> Subscription
+            </button>
+
+            <button class="nav-item" onclick="openLeaderboard()">
+                <span>♕</span> Leaderboard
+            </button>
+
+            <button class="nav-item" onclick="openResources()">
+                <span>▤</span> Resources
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <button class="nav-item"
+                onclick="openProfile()">
+                <span>⚙</span> Settings
+            </button>
+
+            <div class="sidebar-note">
+                <span>✧</span>
+                <strong>Better skills.<br>Brighter future.</strong>
+                <button type="button" onclick="openAIRecommendations()">Ask AI Assistant &nbsp; →</button>
+            </div>
+
+            <button class="nav-item logout-link"
+                onclick="logout()">
+                <span>↪</span> Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div></div>
+
+            <div class="top-actions">
+
+                <div class="search">
+                    🔍
+                    <input id="globalSearch" placeholder="Search anything..." autocomplete="off" aria-label="Search Interview Mate">
+                    <div id="searchResults" class="search-results" role="listbox"></div>
+                </div>
+
+                <button class="icon-btn notification-btn" type="button" aria-label="Open weekly activity" title="Weekly activity" onclick="openWeeklyActivity()">🔔</button>
+                <button class="icon-btn theme-quick-toggle" type="button" aria-label="Toggle light or dark theme" title="Toggle theme" onclick="toggleDarkMode()">☼</button>
+
+                <div class="profile-area">
+
+                    <button
+                        type="button"
+                        class="profile-button"
+                        aria-controls="profileMenu"
+                        aria-expanded="false"
+                        onclick="toggleProfileMenu()">
+
+                        <div class="avatar">
+                            <span id="avatarInitial">Z</span>
+                            <img id="avatarImage">
+                        </div>
+
+                        <span id="headerName">
+                            Student
+                        </span>
+
+                        <span class="header-premium">♛ Premium</span>
+
+                        <span>⌄</span>
+
+                    </button>
+
+
+                    <!-- PROFILE DROPDOWN -->
+
+                    <div
+                        id="profileMenu"
+                        class="profile-menu">
+
+                        <div class="profile-menu-header">
+
+                            <div class="large-avatar">
+                                <span id="menuInitial">Z</span>
+                                <img id="menuAvatar">
+                            </div>
+
+                            <div>
+                                <strong id="menuName">
+                                    Student
+                                </strong>
+
+                                <small id="menuEmail">
+                                    student@email.com
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <button onclick="openProfile()">
+                            👤
+                            <span>
+                                <b>My Profile</b>
+                                <small>Personal information</small>
+                            </span>
+                        </button>
+
+
+                        <button onclick="openSettings()">
+                            ⚙️
+                            <span>
+                                <b>Settings</b>
+                                <small>Account preferences</small>
+                            </span>
+                        </button>
+
+
+                        <button onclick="toggleDarkMode()">
+                            🌙
+                            <span>
+                                <b>Dark Mode</b>
+                                <small id="darkText">
+                                    Enabled
+                                </small>
+                            </span>
+
+                            <i id="darkStatus">ON</i>
+                        </button>
+
+
+                        <button onclick="openPrivacy()">
+                            🔒
+                            <span>
+                                <b>Privacy & Security</b>
+                                <small>Protect your account</small>
+                            </span>
+                        </button>
+
+
+                        <button onclick="openHelp()">
+                            ❓
+                            <span>
+                                <b>Help & Support</b>
+                                <small>Contact our team</small>
+                            </span>
+                        </button>
+
+
+                        <hr>
+
+
+                        <button
+                            class="menu-logout"
+                            onclick="logout()">
+
+                            🚪
+                            <span>
+                                <b>Logout</b>
+                                <small>Sign out</small>
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD HOME -->
+
+        <div id="dashboardHome" class="dashboard-home">
+
+            <div class="dashboard-welcome-card">
+                <div class="welcome-row">
+                    <div class="welcome-copy">
+                        <h1>Welcome back,<br><span id="studentName">Student</span>! <span aria-hidden="true">👋</span></h1>
+                        <p>Keep going — you're one step closer to your dream career. Practice, improve and make it happen.</p>
+                        <div class="ai-online"><span></span> AI-POWERED PRACTICE</div>
+                    </div>
+                    <div class="dashboard-welcome-art" aria-hidden="true">
+                        <div class="dashboard-mini-bot"><i></i><i></i><b>⌣</b><span></span></div>
+                        <div class="dashboard-art-note">Consistent<br><strong>practice leads<br>to big results</strong><em>↗</em></div>
+                        <span class="dashboard-art-spark">✦</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- STATS -->
+
+            <div class="stat-grid">
+
+                <div class="stat-card blue">
+                    <span>▣</span>
+                    <div class="stat-copy"><small>Total Assessments</small><strong id="testsCompleted">0</strong></div>
+                </div>
+
+                <div class="stat-card green">
+                    <span>●</span>
+                    <div class="stat-copy"><small>Average Score</small><strong id="averageScore">0%</strong></div>
+                </div>
+
+                <div class="stat-card orange">
+                    <span>🔥</span>
+                    <div class="stat-copy"><small>Study Streak</small><strong id="currentStreak">0 Days</strong><small>Keep it going!</small></div>
+                </div>
+
+                <div class="stat-card gold">
+                    <span>♛</span>
+                    <div class="stat-copy"><small>Subscription</small><strong id="subscriptionPlanSummary">Free</strong><small>All features unlocked</small></div>
+                </div>
+
+            </div>
+            <span id="userRank" hidden>0</span>
+
+            <div class="dashboard-columns">
+            <div class="dashboard-primary-column">
+
+            <div class="section-title">
+                <h2>Choose Your Practice Section</h2>
+                <button class="section-view-all" type="button" onclick="openDetailedAnalytics()">View all →</button>
+            </div>
+
+
+            <!-- MODULES -->
+
+            <div class="module-grid">
+
+                <div class="module-card aptitude-card">
+
+                    <div class="module-art">🧠</div>
+
+                    <span class="module-label">
+                        AI POWERED
+                    </span>
+
+                    <span class="module-count">50 Qs</span>
+                    <h2>Aptitude</h2>
+
+                    <p>
+                        Practice quantitative, logical reasoning
+                        and verbal ability.
+                    </p>
+
+                    <button onclick="startAIAptitude()">
+                        Start Practice →
+                    </button>
+
+                </div>
+
+
+                <div class="module-card coding-card">
+
+                    <div class="module-art">‹/›</div>
+
+                    <span class="module-label">
+                        AI EVALUATION
+                    </span>
+
+                    <span class="module-count">3 Qs</span>
+                    <h2>Coding</h2>
+
+                    <p>
+                        Solve real-world programming problems
+                        with AI evaluation.
+                    </p>
+
+                    <button onclick="startAICoding()">
+                        Start Practice →
+                    </button>
+
+                </div>
+
+
+                <div class="module-card hr-card">
+
+                    <div class="module-art">🎤</div>
+
+                    <span class="module-label">
+                        AI INTERVIEWER
+                    </span>
+
+                    <span class="module-count">3 Qs</span>
+                    <h2>HR Interview</h2>
+
+                    <p>
+                        Practice mock interviews with an
+                        intelligent AI interviewer.
+                    </p>
+
+                    <button onclick="startAIInterview()">
+                        Start Practice →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+
+            <div class="section-title">
+                <h2>Your Progress</h2>
+                <button class="section-view-all" type="button" onclick="openDetailedAnalytics()">View all →</button>
+            </div>
+
+
+            <div class="dashboard-bottom">
+
+                <div class="progress-card">
+
+                    <div class="circle-progress">
+                        <strong id="overallProgress">0%</strong>
+                        <small>Overall Progress</small>
+                    </div>
+
+                    <div class="progress-lines">
+
+                        <div>
+                            <span>Aptitude</span>
+                        <b id="aptitudeProgressText">0%</b>
+                        <i><em id="aptitudeProgressBar" style="width:0%"></em></i>            
+                        </div>
+
+                        <div>
+                            <span>Coding</span>
+                        <b id="codingProgressText">0%</b>
+                        <i><em class="green-bar"
+                        id="codingProgressBar"
+                        style="width:0%"></em></i>
+                        </div>
+
+                        <div>
+                            <span>HR Interview</span>
+                        <b id="hrProgressText">0%</b>
+                 <i><em class="red-bar"
+                      id="hrProgressBar"
+                    style="width:0%"></em></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="weekly-card" onclick="openWeeklyActivity()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openWeeklyActivity()}">
+
+                    <div class="weekly-head">
+                        <div>
+                            <h3>Weekly Activity</h3>
+                            <small>Keep your momentum going</small>
+                        </div>
+
+                        <strong>0%</strong>
+                    </div>
+
+                    <div class="activity-bars">
+
+                         <i style="height:0%"></i>
+                         <i style="height:0%"></i>
+                         <i style="height:0%"></i>
+                        <i style="height:0%"></i>
+                        <i style="height:0%"></i>
+                        <i style="height:0%"></i>
+                        <i style="height:0%"></i>
+                    </div>
+
+                    <div class="days">
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                        <span>Sun</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INTERESTING FEATURES -->
+
+            <div class="features-dashboard">
+
+                <div onclick="openDetailedAnalytics()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openDetailedAnalytics()}">
+                    <span class="feature-tile-icon" aria-hidden="true">📊</span>
+                    <strong>Detailed Analytics</strong>
+                    <small>Track performance with smart insights.</small>
+                </div>
+
+                <div onclick="openDailyGoals()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openDailyGoals()}">
+                    <span class="feature-tile-icon" aria-hidden="true">🎯</span>
+                    <strong>Daily Goals</strong>
+                    <small>Build consistency every day.</small>
+                </div>
+
+                <div onclick="openStreakRewards()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openStreakRewards()}">
+                    <span class="feature-tile-icon" aria-hidden="true">🔥</span>
+                    <strong>Streak & Rewards</strong>
+                    <small>Maintain streaks and earn badges.</small>
+                </div>
+
+                <div onclick="openAIRecommendations()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openAIRecommendations()}">
+                    <span class="feature-tile-icon" aria-hidden="true">🤖</span>
+                    <strong>AI Recommendations</strong>
+                    <small>Get suggestions for weak areas.</small>
+                </div>
+
+                <div onclick="openLeaderboard()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLeaderboard()}">
+                    <span class="feature-tile-icon" aria-hidden="true">🏆</span>
+                    <strong>Leaderboard</strong>
+                    <small>Compete and improve your rank.</small>
+                </div>
+
+                <div onclick="openStudyPlanner()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openStudyPlanner()}">
+                    <span class="feature-tile-icon" aria-hidden="true">📅</span>
+                    <strong>Study Planner</strong>
+                    <small>Create a personalized schedule.</small>
+                </div>
+
+            </div>
+
+            <section class="rail-card dashboard-assessments-card" aria-labelledby="recentAssessmentsTitle">
+                <div class="rail-card-heading">
+                    <div><h2 id="recentAssessmentsTitle">Recent Assessments</h2><p>Your latest practice results</p></div>
+                    <button type="button" onclick="openDetailedAnalytics()">View all →</button>
+                </div>
+                <div class="rail-table-wrap">
+                    <table class="rail-table">
+                        <thead><tr><th>Date</th><th>Section</th><th>Score</th><th>Status</th></tr></thead>
+                        <tbody id="recentAssessmentRows"><tr><td colspan="4" class="rail-empty">Finish a practice session to see your results here.</td></tr></tbody>
+                    </table>
+                </div>
+            </section>
+
+            </div>
+
+            <aside class="dashboard-side-rail" aria-label="Your dashboard highlights">
+                <section class="rail-card daily-goal-card">
+                    <div class="rail-card-heading">
+                        <div><h2>Today's Goal</h2><p>Practice at least one section today</p></div>
+                        <span class="rail-icon">🎯</span>
+                    </div>
+                    <div class="rail-goal-count">
+                        <div class="rail-goal-ring"><strong id="railGoalPercent">0%</strong></div>
+                        <div><strong><span id="railDailyDone">0</span> / <span id="railDailyTarget">1</span></strong><small>assessments completed</small></div>
+                    </div>
+                    <div class="rail-goal-bar"><i id="railDailyGoalBar"></i></div>
+                    <p class="rail-goal-note" id="railGoalNote">Start a practice session to make progress today.</p>
+                    <button class="rail-action" type="button" onclick="openDailyGoals()">Manage daily goal →</button>
+                </section>
+
+                <section class="rail-card recent-activity-card">
+                    <div class="rail-card-heading">
+                        <div><h2>Recent Activity</h2><p>Your latest practice sessions</p></div>
+                        <button type="button" onclick="openDetailedAnalytics()">View all →</button>
+                    </div>
+                    <div class="rail-activity-list" id="recentActivityList">
+                        <p class="rail-empty">Your activity will appear here after your first practice session.</p>
+                    </div>
+                </section>
+
+                <section class="rail-ai-card">
+                    <div class="rail-ai-bot" aria-hidden="true"><i></i><i></i><b></b></div>
+                    <h2>Need help or have a doubt?</h2>
+                    <p>Your AI assistant is ready to guide your next practice step.</p>
+                    <button type="button" onclick="openAIRecommendations()">Ask AI Assistant →</button>
+                </section>
+            </aside>
+
+        </div>
+
+        </div>
+
+
+        <!-- =================================================
+             PROFILE
+        ================================================== -->
+
+        <div id="profilePage" class="inner-page profile-settings-page">
+            <button class="back-button" type="button" onclick="showDashboard()">← Dashboard</button>
+            <div class="profile-page-heading">
+                <div><h1>Profile Settings</h1><p>Manage your account information and preferences</p></div>
+                <span class="profile-heading-mark">✦ &nbsp; Your career, your pace</span>
+            </div>
+
+            <section class="profile-cover-card" id="profileOverview">
+                <div class="profile-cover-avatar">
+                    <div class="profile-big-avatar"><span id="bigInitial">S</span><img id="bigProfileImage" alt="Profile photo"></div>
+                    <label class="upload-photo" title="Choose a profile photo">＋
+                        <input type="file" accept="image/*" onchange="uploadProfile(event)" aria-label="Change profile photo">
+                    </label>
+                </div>
+                <div class="profile-cover-copy">
+                    <h2 id="profileDisplayName">Student</h2>
+                    <p id="profileDisplayEmail">student@email.com</p>
+                    <span class="member-badge">♛ &nbsp; Interview Mate Member</span>
+                </div>
+                <button class="outline-action" type="button" onclick="scrollSettings('personalSettings')">✎ &nbsp; Edit Profile</button>
+            </section>
+
+            <div class="profile-settings-grid">
+                <aside class="profile-settings-menu" aria-label="Profile settings sections">
+                    <button class="active" type="button" onclick="scrollSettings('profileOverview')">◉ &nbsp; Profile</button>
+                    <button type="button" onclick="scrollSettings('personalSettings')">♙ &nbsp; Account</button>
+                    <button type="button" onclick="scrollSettings('passwordSettings')">⬡ &nbsp; Security</button>
+                    <button type="button" onclick="openSettingsSection('appearanceSettings')">☼ &nbsp; Appearance</button>
+                    <button type="button" onclick="openSettingsSection('notificationsSettings')">♧ &nbsp; Notifications</button>
+                    <button type="button" onclick="openPrivacy()">◇ &nbsp; Privacy</button>
+                    <div class="profile-menu-quote">Better skills<br><strong>Brighter future</strong><span>♡</span></div>
+                </aside>
+
+                <div class="profile-main-column">
+                    <section class="profile-detail-card" id="personalSettings">
+                        <div class="profile-card-heading"><div><h2>Personal Information</h2><p>Your basic details</p></div><span>✎</span></div>
+                        <div class="profile-form-grid">
+                            <label>Full Name<input id="profileName" autocomplete="name" placeholder="Your full name"></label>
+                            <label>Email Address<input id="profileEmail" type="email" autocomplete="email"></label>
+                            <label>Phone Number<input id="profilePhone" type="tel" autocomplete="tel" placeholder="+91 XXXXX XXXXX"></label>
+                            <label>College Name<input id="profileCollege" placeholder="College name"></label>
+                            <label>Course<input id="profileCourse" placeholder="BCA"></label>
+                            <label>Year<input id="profileYear" placeholder="3rd Year"></label>
+                        </div>
+                        <button class="primary-btn" type="button" onclick="saveProfile()">Save Changes &nbsp; →</button>
+                    </section>
+
+                    <section class="profile-detail-card password-card" id="passwordSettings">
+                        <div class="profile-card-heading"><div><h2>Change Password</h2><p>Keep your account safe and secure</p></div><span>♙</span></div>
+                        <form class="password-change-form" onsubmit="changePassword(event)">
+                            <label class="password-input"><span>♙</span><input id="currentPassword" type="password" autocomplete="current-password" placeholder="Current password" required><button type="button" aria-label="Show current password" onclick="toggleFieldPassword('currentPassword', this)">◉</button></label>
+                            <label class="password-input"><span>♙</span><input id="newPassword" type="password" autocomplete="new-password" placeholder="New password (at least 8 characters)" minlength="8" required><button type="button" aria-label="Show new password" onclick="toggleFieldPassword('newPassword', this)">◉</button></label>
+                            <label class="password-input"><span>♙</span><input id="confirmNewPassword" type="password" autocomplete="new-password" placeholder="Confirm new password" minlength="8" required><button type="button" aria-label="Show confirmation password" onclick="toggleFieldPassword('confirmNewPassword', this)">◉</button></label>
+                            <button class="primary-btn" type="submit">♙ &nbsp; Update Password</button>
+                        </form>
+                    </section>
+                </div>
+
+                <aside class="profile-side-column">
+                    <section class="profile-side-card completion-card">
+                        <div class="profile-side-heading"><span>◉</span><div><h3>Profile Completion</h3><p>Complete your profile for a better experience</p></div></div>
+                        <div class="completion-progress"><i id="profileCompletionBar"></i></div>
+                        <div class="completion-percent" id="profileCompletionValue">60%</div>
+                        <ul class="completion-list">
+                            <li data-profile-check="basic"><span>✓</span>Basic Information</li>
+                            <li data-profile-check="education"><span>✓</span>College & Course</li>
+                            <li data-profile-check="year"><span>✓</span>Year</li>
+                            <li data-profile-check="phone"><span>○</span>Phone Number</li>
+                            <li data-profile-check="photo"><span>○</span>Profile Photo</li>
+                        </ul>
+                    </section>
+
+                    <section class="profile-side-card account-card">
+                        <div class="profile-side-heading"><span>♙</span><div><h3>Account Information</h3><p>Interview Mate profile</p></div></div>
+                        <dl><div><dt>Membership</dt><dd>Active</dd></div><div><dt>Subscription Plan</dt><dd id="profilePlan">Free</dd></div><div><dt>Assessments Taken</dt><dd id="profileAssessmentCount">0</dd></div><div><dt>Average Score</dt><dd id="profileAverageScore">0%</dd></div></dl>
+                    </section>
+
+                    <section class="profile-side-card quick-actions-card">
+                        <div class="profile-side-heading"><span>ϟ</span><div><h3>Quick Actions</h3><p>Shortcuts for your account</p></div></div>
+                        <div class="profile-quick-actions">
+                            <button type="button" onclick="openProgress()">▥ &nbsp; View Results</button>
+                            <button type="button" onclick="openSubscriptionDetails()">♛ &nbsp; Subscription Details</button>
+                            <button type="button" onclick="downloadUserReport()">⇩ &nbsp; Download Report</button>
+                            <button type="button" onclick="openHelp()">◉ &nbsp; Contact Support</button>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+
+
+        <!-- =================================================
+             SETTINGS
+        ================================================== -->
+
+        <div id="settingsPage" class="inner-page">
+
+            <button class="back-button"
+                onclick="showDashboard()">
+                ← Dashboard
+            </button>
+
+            <h1>Settings</h1>
+            <p>Manage your account and preferences</p>
+
+
+            <div class="settings-layout">
+
+                <div class="settings-menu">
+
+                    <button class="active" onclick="openProfile()">
+                        Profile
+                    </button>
+
+                    <button onclick="openProfile()">
+                        Personal Information
+                    </button>
+
+                    <button onclick="openPrivacy()">
+                        Security
+                    </button>
+
+                    <button onclick="scrollSettings('preferencesSettings')">
+                        Preferences
+                    </button>
+
+                    <button onclick="scrollSettings('appearanceSettings')">
+                        Appearance
+                    </button>
+
+                    <button onclick="scrollSettings('notificationsSettings')">
+                        Notifications
+                    </button>
+
+                </div>
+
+
+                <div class="settings-content">
+
+                    <div class="settings-section" id="appearanceSettings">
+
+                        <h2>Appearance</h2>
+
+                        <div class="setting-row">
+
+                            <div>
+                                <strong>Dark Mode</strong>
+                                <small id="themeDescription">
+                                    Dark theme for a better viewing
+                                    experience
+                                </small>
+                            </div>
+
+                                    <button
+                                class="toggle active"
+                                type="button"
+                                onclick="toggleDarkMode()"
+                                id="settingsDarkToggle"
+                                aria-label="Toggle light and dark mode"
+                                aria-pressed="true">
+                                <span></span>
+                            </button>
+
+                        </div>
+
+
+                        <div class="setting-row">
+
+                            <div>
+                                <strong>Theme Accent</strong>
+                                <small>
+                                    Choose your preferred accent
+                                    color
+                                </small>
+                            </div>
+
+                            <div class="colors">
+
+                                <button aria-label="Purple accent" title="Purple" onclick="setThemeAccent('#8B5CF6')"></button>
+                                <button aria-label="Blue accent" title="Blue" onclick="setThemeAccent('#2563EB')"></button>
+                                <button aria-label="Teal accent" title="Teal" onclick="setThemeAccent('#00C9B7')"></button>
+                                <button aria-label="Orange accent" title="Orange" onclick="setThemeAccent('#F59E0B')"></button>
+                                <button aria-label="Pink accent" title="Pink" onclick="setThemeAccent('#EC4899')"></button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="settings-section" id="preferencesSettings">
+                        <h2>Preferences</h2>
+                        <div class="setting-row">
+                            <div><strong>Study reminders</strong><small>Keep a reminder preference for your account on this device</small></div>
+                            <button class="toggle" id="settingsReminderToggle" onclick="toggleReminderPreference()" aria-label="Toggle study reminders"><span></span></button>
+                        </div>
+                    </div>
+
+                    <div class="settings-section" id="notificationsSettings">
+                        <h2>Notifications</h2>
+                        <div class="setting-row">
+                            <div><strong>Weekly progress updates</strong><small>Show activity updates in your dashboard</small></div>
+                            <button class="toggle active" id="settingsUpdatesToggle" onclick="toggleUpdatesPreference()" aria-label="Toggle progress updates"><span></span></button>
+                        </div>
+                    </div>
+
+
+                    <div class="settings-section">
+
+                        <h2>Support</h2>
+
+                        <div class="support-box" onclick="openHelp()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openHelp()}">
+
+                            <span>✉</span>
+
+                            <div>
+                                <strong>
+                                    Need help?
+                                </strong>
+
+                                <small>
+                                    Contact us at
+                                    supportinterviewmate@gmail.com
+                                </small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="featurePage" class="inner-page feature-page" aria-live="polite"></div>
+
+        <footer class="dashboard-footer">
+            <span class="dashboard-footer-brand"><span class="logo-box">M</span><strong>Interview <b>Mate</b></strong></span>
+            <span>Practice&nbsp; • &nbsp;Improve&nbsp; • &nbsp;Succeed</span>
+            <small>© 2026 Interview Mate. All rights reserved.</small>
+        </footer>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     APTITUDE
+===================================================== -->
+
+<section id="aptitudePage" class="assessment-page">
+
+    <nav class="practice-nav" aria-label="Practice navigation">
+        <a class="practice-brand" href="#dashboard" onclick="event.preventDefault(); showDashboard()"><span class="logo-box">M</span><b>Interview <span>Mate</span></b></a>
+        <div class="practice-links"><button type="button" onclick="showDashboard()">Dashboard</button><button type="button" onclick="startAIAptitude()">Aptitude</button><button type="button" onclick="startAICoding()">Coding</button><button type="button" onclick="startAIInterview()">HR Interview</button></div>
+        <button type="button" class="practice-theme" onclick="toggleDarkMode()" aria-label="Toggle theme">☾</button>
+        <button type="button" class="practice-exit" onclick="exitAptitude()">Exit →</button>
+    </nav>
+
+    <div class="assessment-header module-hero module-hero--apt">
+
+        <div>
+            <span class="ai-label">
+                AI POWERED
+            </span>
+
+            <h1>AI Aptitude Assessment</h1>
+
+            <p>
+                Test your quantitative, logical and verbal skills.
+            </p>
+        </div>
+        <div class="module-bot module-bot--apt" aria-hidden="true"><span class="bubble">Think it through!</span><svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interview Mate robot"><g class="bot-float">
+<ellipse cx="120" cy="206" rx="62" ry="8" fill="#19f0e6" opacity=".25"/>
+<path d="M120 36V18" stroke="#7fe0ee" stroke-width="6" stroke-linecap="round"/>
+<circle class="bot-pulse" cx="120" cy="13" r="8" fill="url(#rbGlow)"/>
+<path d="M66 82a54 54 0 0 1 108 0" fill="none" stroke="#bff8ff" stroke-width="10" stroke-linecap="round"/>
+<rect x="56" y="38" width="128" height="98" rx="38" fill="url(#rbShell)"/>
+<rect x="65" y="47" width="110" height="80" rx="30" fill="url(#rbFace)" stroke="#8df4ff" stroke-width="2.5"/>
+<rect x="44" y="66" width="18" height="44" rx="9" fill="url(#rbShell)"/>
+<rect x="178" y="66" width="18" height="44" rx="9" fill="url(#rbShell)"/>
+<g class="bot-eye"><path d="M91 88q10-15 20 0" fill="none" stroke="#00e6ef" stroke-width="6" stroke-linecap="round"/><path d="M129 88q10-15 20 0" fill="none" stroke="#00e6ef" stroke-width="6" stroke-linecap="round"/></g>
+<path d="M105 103q15 17 30 0" fill="none" stroke="#43e6ef" stroke-width="5" stroke-linecap="round"/>
+<path d="M78 146q42-18 84 0l16 56H62z" fill="url(#rbShell)"/>
+<path d="M100 152h40l12 30h-64z" fill="#13364c"/>
+<circle class="bot-pulse" cx="120" cy="168" r="9" fill="url(#rbGlow)"/>
+<path d="M62 160q-22 6-26 26" stroke="#9fe9f2" stroke-width="14" stroke-linecap="round" fill="none"/>
+<g class="bot-wave"><path d="M178 160q24-4 30-30" stroke="#9fe9f2" stroke-width="14" stroke-linecap="round" fill="none"/></g>
+<g transform="translate(196 62)"><circle r="24" fill="#062a44" stroke="#19f0e6" stroke-width="3"/>
+<path d="M-4-12c-8 0-13 5-13 11 0 3 1 5 3 7-1 8 4 13 11 13h3zM4-12c8 0 13 5 13 11 0 3-1 5-3 7 1 8-4 13-11 13h-3z" fill="none" stroke="#19f0e6" stroke-width="3" stroke-linejoin="round"/><path d="M0-12v26" stroke="#19f0e6" stroke-width="3"/></g>
+<g class="bot-pulse"><path d="M28 70l4-10 4 10 10 4-10 4-4 10-4-10-10-4z" fill="#19f0e6"/></g></g></svg></div>
+    </div>
+
+
+    <div class="assessment-box">
+
+        <div class="question-top">
+
+            <span>
+                Question
+                <b id="aptitudeNumber">1</b>
+                of <b id="aptitudeTotal">5</b>
+            </span>
+
+            <strong class="aptitude-timer"><span aria-hidden="true">◷</span> <span id="aptitudeTimer">05:00</span> left</strong>
+
+            <strong id="difficulty" class="difficulty-badge">
+                Easy
+            </strong>
+
+        </div>
+
+        <h2 id="aptitudeQuestion">
+            Loading question...
+        </h2>
+
+        <div id="aptitudeOptions"></div>
+
+        <button
+            class="primary-btn"
+            onclick="submitAptitudeAnswer()">
+            Submit Answer
+        </button>
+
+        <div class="aptitude-navigation">
+            <button type="button" onclick="previousAptitudeQuestion()">← Previous</button>
+            <button type="button" id="aptitudeNextButton" onclick="nextAptitudeQuestion()">Next →</button>
+        </div>
+
+        <div id="aptitudeFeedback"></div>
+
+        <div class="progress-track">
+            <div id="aptitudeProgress"></div>
+        </div>
+
+    </div>
+
+    <aside class="practice-tip"><span>✦</span><div><strong>Quick Tip</strong><p>Take your time and think logically. You can do it!</p></div></aside>
+
+</section>
+
+
+<!-- =====================================================
+     CODING
+===================================================== -->
+
+<section id="codingPage" class="assessment-page">
+
+    <nav class="practice-nav" aria-label="Practice navigation">
+        <a class="practice-brand" href="#dashboard" onclick="event.preventDefault(); showDashboard()"><span class="logo-box">M</span><b>Interview <span>Mate</span></b></a>
+        <div class="practice-links"><button type="button" onclick="showDashboard()">Dashboard</button><button type="button" onclick="startAIAptitude()">Aptitude</button><button type="button" onclick="startAICoding()">Coding</button><button type="button" onclick="startAIInterview()">HR Interview</button></div>
+        <button type="button" class="practice-theme" onclick="toggleDarkMode()" aria-label="Toggle theme">☾</button>
+        <button type="button" class="practice-exit" onclick="exitCoding()">Exit →</button>
+    </nav>
+
+    <div class="assessment-header module-hero module-hero--cod">
+
+        <div>
+            <span class="ai-label">AI POWERED</span>
+
+            <h1>AI Coding Assessment</h1>
+
+            <p>
+                Solve programming challenges and test your logic.
+            </p>
+        </div>
+        <div class="module-bot module-bot--cod" aria-hidden="true"><span class="bubble">Debug. Run. Repeat.</span><svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interview Mate robot"><g class="bot-float">
+<ellipse cx="120" cy="206" rx="62" ry="8" fill="#37b8ff" opacity=".25"/>
+<path d="M120 36V18" stroke="#7fe0ee" stroke-width="6" stroke-linecap="round"/>
+<circle class="bot-pulse" cx="120" cy="13" r="8" fill="url(#rbGlow)"/>
+<path d="M66 82a54 54 0 0 1 108 0" fill="none" stroke="#bff8ff" stroke-width="10" stroke-linecap="round"/>
+<rect x="56" y="38" width="128" height="98" rx="38" fill="url(#rbShell)"/>
+<rect x="65" y="47" width="110" height="80" rx="30" fill="url(#rbFace)" stroke="#8df4ff" stroke-width="2.5"/>
+<rect x="44" y="66" width="18" height="44" rx="9" fill="url(#rbShell)"/>
+<rect x="178" y="66" width="18" height="44" rx="9" fill="url(#rbShell)"/>
+<g class="bot-eye"><path d="M91 88q10-15 20 0" fill="none" stroke="#00e6ef" stroke-width="6" stroke-linecap="round"/><path d="M129 88q10-15 20 0" fill="none" stroke="#00e6ef" stroke-width="6" stroke-linecap="round"/></g>
+<path d="M105 103q15 17 30 0" fill="none" stroke="#43e6ef" stroke-width="5" stroke-linecap="round"/>
+<path d="M78 146q42-18 84 0l16 56H62z" fill="url(#rbShell)"/>
+<path d="M100 152h40l12 30h-64z" fill="#13364c"/>
+<circle class="bot-pulse" cx="120" cy="168" r="9" fill="url(#rbGlow)"/>
+<rect x="64" y="150" width="112" height="52" rx="8" fill="#05243b" stroke="#37b8ff" stroke-width="3"/>
+<path d="M104 166l-10 10 10 10M136 166l10 10-10 10M126 162l-12 28" fill="none" stroke="#19f0e6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46 206h148l-8-8H54z" fill="#6fcbe0"/>
+<path d="M62 158q-16 8-14 26M178 158q16 8 14 26" stroke="#9fe9f2" stroke-width="12" stroke-linecap="round" fill="none"/>
+<g class="bot-pulse"><circle cx="214" cy="52" r="3" fill="#37b8ff"/><circle cx="26" cy="96" r="3" fill="#19f0e6"/><circle cx="222" cy="108" r="2.5" fill="#19f0e6"/></g></g></svg></div>
+    </div>
+
+
+    <div class="coding-box">
+
+        <div class="question-top">
+
+            <span>
+                Problem
+                <b id="codingNumber">1</b>
+                of 3
+            </span>
+
+            <strong id="codingDifficulty">
+                Easy
+            </strong>
+
+        </div>
+
+        <div class="coding-layout">
+            <section class="coding-problem-panel">
+                <h2 id="codingTitle">Loading...</h2>
+                <p id="codingDescription"></p>
+                <h3>Sample Input & Output</h3>
+                <pre id="codingExample"></pre>
+                <span class="language-pill">🐍 Python</span>
+            </section>
+
+            <section class="coding-editor-panel">
+                <div class="coding-editor-heading"><h3>Your Solution</h3><span>Python</span></div>
+                <textarea id="codeEditor" spellcheck="false" aria-label="Python solution" placeholder="Write your Python code here..."></textarea>
+                <div class="coding-editor-actions">
+                    <button type="button" class="run-code-button" onclick="runCoding()">▷ Run Code</button>
+                    <button type="button" id="submitCodingButton" class="primary-btn" onclick="submitCoding()">✓ Submit Solution →</button>
+                </div>
+            </section>
+        </div>
+
+        <div class="coding-lower-grid">
+            <section class="coding-test-card">
+                <div class="coding-output-tabs">
+                    <button type="button" class="active" data-panel="tests" onclick="switchCodingPanel('tests')">Sample Case</button>
+                    <button type="button" data-panel="results" onclick="switchCodingPanel('results')">Results</button>
+                </div>
+                <div id="codingTestsPanel"><small>Example for this problem</small><pre id="codingSampleCase"></pre></div>
+                <div id="codingResultsPanel" hidden><pre id="codingOutput" aria-live="polite"></pre><div id="codingFeedback"></div></div>
+            </section>
+            <aside class="coding-progress-card"><div class="coding-progress-heading"><strong>Your Progress</strong><span id="codingProgressValue">0%</span></div><div class="coding-progress-ring"><span id="codingProgressRingValue">0%</span></div><div class="coding-progress-track"><i id="codingAssessmentProgressBar"></i></div><small id="codingSolvedCount">0 / 3 questions checked</small><p>Keep going! Practice makes progress.</p></aside>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HR
+===================================================== -->
+
+<section id="aiPage" class="assessment-page">
+
+    <nav class="practice-nav" aria-label="Practice navigation">
+        <a class="practice-brand" href="#dashboard" onclick="event.preventDefault(); showDashboard()"><span class="logo-box">M</span><b>Interview <span>Mate</span></b></a>
+        <div class="practice-links"><button type="button" onclick="showDashboard()">Dashboard</button><button type="button" onclick="startAIAptitude()">Aptitude</button><button type="button" onclick="startAICoding()">Coding</button><button type="button" onclick="startAIInterview()">HR Interview</button></div>
+        <button type="button" class="practice-theme" onclick="toggleDarkMode()" aria-label="Toggle theme">☾</button>
+        <button type="button" class="practice-exit" onclick="exitAIInterview()">Exit →</button>
+    </nav>
+
+    <div class="assessment-header module-hero module-hero--hr">
+
+        <div>
+            <span class="ai-label">AI INTERVIEWER</span>
+
+            <h1>AI HR Interview</h1>
+
+            <p>
+                Practice with your personal AI interviewer and get tailored feedback after every answer.
+            </p>
+        </div>
+        <div class="module-bot module-bot--hr" aria-hidden="true"><span class="bubble">You got this!</span><svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interview Mate robot"><g class="bot-float">
+<ellipse cx="120" cy="206" rx="62" ry="8" fill="#19f0e6" opacity=".25"/>
+<path d="M120 36V18" stroke="#7fe0ee" stroke-width="6" stroke-linecap="round"/>
+<circle class="bot-pulse" cx="120" cy="13" r="8" fill="url(#rbGlow)"/>
+<path d="M66 82a54 54 0 0 1 108 0" fill="none" stroke="#bff8ff" stroke-width="10" stroke-linecap="round"/>
+<rect x="56" y="38" width="128" height="98" rx="38" fill="url(#rbShell)"/>
+<rect x="65" y="47" width="110" height="80" rx="30" fill="url(#rbFace)" stroke="#8df4ff" stroke-width="2.5"/>
+<rect x="44" y="66" width="18" height="44" rx="9" fill="url(#rbShell)"/>
+<rect x="178" y="66" width="18" height="44" rx="9" fill="url(#rbShell)"/>
+<g class="bot-eye"><path d="M91 88q10-15 20 0" fill="none" stroke="#00e6ef" stroke-width="6" stroke-linecap="round"/><path d="M129 88q10-15 20 0" fill="none" stroke="#00e6ef" stroke-width="6" stroke-linecap="round"/></g>
+<path d="M105 103q15 17 30 0" fill="none" stroke="#43e6ef" stroke-width="5" stroke-linecap="round"/>
+<path d="M78 146q42-18 84 0l16 56H62z" fill="url(#rbShell)"/>
+<path d="M100 152h40l12 30h-64z" fill="#13364c"/>
+<circle class="bot-pulse" cx="120" cy="168" r="9" fill="url(#rbGlow)"/>
+<path d="M44 92q-8 34 40 40" fill="none" stroke="#bff8ff" stroke-width="5" stroke-linecap="round"/>
+<circle cx="86" cy="134" r="6" fill="#19f0e6"/>
+<path d="M62 160q-22 6-26 26" stroke="#9fe9f2" stroke-width="14" stroke-linecap="round" fill="none"/>
+<g class="bot-wave"><path d="M178 160q26-6 34-38" stroke="#9fe9f2" stroke-width="14" stroke-linecap="round" fill="none"/><circle cx="214" cy="116" r="10" fill="#d9fbff"/></g>
+<g class="bot-pulse"><path d="M26 64q-6 8 0 16M16 58q-12 14 0 28" fill="none" stroke="#19f0e6" stroke-width="3" stroke-linecap="round"/></g></g></svg></div>
+    </div>
+
+
+    <div class="interview-box">
+
+        <div class="ai-interviewer">
+
+            <div class="bot">
+                🤖
+            </div>
+
+            <div>
+                <strong>Interview Mate AI</strong>
+                <small>AI Interviewer • Online</small>
+            </div>
+
+        </div>
+
+
+        <div
+            id="chatBox"
+            class="chat-box">
+        </div>
+
+
+        <div class="answer-area">
+
+            <textarea
+                id="userAnswer"
+                maxlength="500"
+                placeholder="Type your response here..."></textarea>
+
+            <div class="answer-actions"><button type="button" onclick="giveInterviewHint()">♧ Give Hint</button><span id="answerCharacterCount">0/500</span><button type="button" onclick="submitAIAnswer()">➤ Send</button></div>
+
+        </div>
+
+
+        <div class="interview-progress">
+            <span>Question <b id="aiQuestionNumber">1</b> of 5</span>
+            <div class="hr-progress-track"><i id="hrProgressFill"></i></div>
+        </div>
+
+    </div>
+
+    <section class="hr-feedback-card"><span>★</span><div><strong>Your Feedback</strong><p id="hrFeedbackSummary">Your answers and coaching will appear in the conversation as you practice.</p></div></section>
+
+</section>
+
+
+<!-- =====================================================
+     RESULT
+===================================================== -->
+
+<section id="resultPage" class="result-page">
+
+    <div class="result-card">
+
+        <div class="result-icon">🎉</div>
+
+        <h1>Assessment Completed</h1>
+
+        <p>Your performance has been recorded.</p>
+
+        <div class="result-score"
+            id="score">
+            0%
+        </div>
+
+        <h3 id="resultMessage"></h3>
+
+        <button
+            class="primary-btn"
+            onclick="backToDashboard()">
+            Back to Dashboard
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <span>
+        © 2026 Interview Mate. All rights reserved.
+    </span>
+
+    <span>
+        Made with ❤️ for future professionals.
+    </span>
+
+    <span>
+        Contact us:
+        <a href="mailto:supportinterviewmate@gmail.com">
+            supportinterviewmate@gmail.com
+        </a>
+    </span>
+
+</footer>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="./script.js?v=20261103-feature-pages-v1"></script>
+
+</body>
+</html>

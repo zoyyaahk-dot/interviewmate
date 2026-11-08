@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interview Mate | Dashboard Preview</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design.css?v=20261103-feature-pages-v1">
+    <link rel="stylesheet" href="theme.css?v=20261102-robots">
+    <style>
+        body { min-height: 100vh; overflow-y: auto !important; }
+        #previewDashboard { display: flex !important; min-height: 100vh; }
+        #previewDashboard .main-content { flex: 1; min-width: 0; margin-left: 238px !important; }
+        #previewDashboard .topbar { position: sticky; top: 0; z-index: 10; }
+        .preview-note { margin: 0 clamp(16px, 2vw, 28px); padding: 9px 12px; border: 1px solid rgba(8,217,213,.28); border-radius: 9px; color: #9cece7; background: rgba(0,190,190,.06); font-size: 10px; }
+        @media(max-width:820px) { #previewDashboard .main-content { margin-left: 185px !important; } }
+        @media(max-width:600px) { #previewDashboard .main-content { margin-left: 0 !important; } }
+    </style>
+</head>
+<body>
+<section id="previewDashboard" class="dashboard">
+    <aside class="sidebar">
+        <div class="side-logo"><div class="logo-box">M</div><span>Interview <span>Mate</span></span></div>
+        <nav aria-label="Dashboard preview navigation">
+            <button class="nav-item active" type="button"><span>⌂</span> Dashboard</button>
+            <button class="nav-item" type="button"><span>◉</span> Aptitude</button>
+            <button class="nav-item" type="button"><span>⌘</span> Coding</button>
+            <button class="nav-item" type="button"><span>◌</span> HR Interview</button>
+            <button class="nav-item" type="button"><span>▣</span> Mock Tests</button>
+            <button class="nav-item" type="button"><span>▥</span> Results</button>
+            <button class="nav-item" type="button"><span>♛</span> Subscription</button>
+            <button class="nav-item" type="button"><span>♕</span> Leaderboard</button>
+            <button class="nav-item" type="button"><span>▤</span> Resources</button>
+        </nav>
+        <div class="sidebar-bottom">
+            <button class="nav-item" type="button"><span>⚙</span> Settings</button>
+            <div class="sidebar-note"><span>✧</span><strong>Better skills.<br>Brighter future.</strong></div>
+        </div>
+    </aside>
+    <main class="main-content">
+        <header class="topbar">
+            <div><small>Dashboard preview · sample data</small></div>
+            <div class="top-actions">
+                <div class="search">🔍 <input placeholder="Search anything..." aria-label="Search preview"></div>
+                <button class="icon-btn notification-btn" type="button" aria-label="Notifications">🔔</button>
+                <div class="profile-area"><button class="profile-button" type="button"><div class="avatar"><span>KP</span></div><span>Kiswa Parveen</span><span class="header-premium">♛ Premium</span></button></div>
+                <button class="icon-btn" type="button" aria-label="Theme preview">☾</button>
+            </div>
+        </header>
+        <div id="dashboardHome" class="dashboard-home">
+            <div class="dashboard-welcome-card">
+                    <div class="welcome-row">
+                        <div class="welcome-copy">
+                            <h1>Welcome back,<br><span>Kiswa Parveen</span>! 👋</h1>
+                            <p>Keep going! You're one step closer to your dream career. Practice, improve and make it happen.</p>
+                            <div class="ai-online"><span></span> AI-POWERED PRACTICE</div>
+                        </div>
+                        <div class="dashboard-welcome-art" aria-hidden="true"><div class="dashboard-mini-bot"><i></i><i></i><b>⌣</b><span></span></div><div class="dashboard-art-note">Consistent<br><strong>practice leads<br>to big results</strong><em>↗</em></div><span class="dashboard-art-spark">✦</span></div>
+                    </div>
+            </div>
+            <div class="stat-grid">
+                    <div class="stat-card blue"><span>▣</span><div class="stat-copy"><small>Assessments</small><strong>12</strong></div></div>
+                    <div class="stat-card green"><span>●</span><div class="stat-copy"><small>Average Score</small><strong>78%</strong></div></div>
+                    <div class="stat-card orange"><span>🔥</span><div class="stat-copy"><small>Study Streak</small><strong>3 Days</strong><small>Keep it going!</small></div></div>
+                    <div class="stat-card gold"><span>♛</span><div class="stat-copy"><small>Subscription</small><strong>Premium</strong><small>All features unlocked</small></div></div>
+            </div>
+            <div class="dashboard-columns">
+            <main class="dashboard-primary-column">
+                <div class="section-title"><h2>Choose Your Practice Section</h2></div>
+                <div class="module-grid">
+                    <article class="module-card aptitude-card"><div class="module-art">🧠</div><span class="module-label">AI POWERED</span><span class="module-count">50 Qs</span><h2>Aptitude</h2><p>Sharpen logical reasoning and numerical skills with practice tests.</p><button type="button">Start Practice →</button></article>
+                    <article class="module-card coding-card"><div class="module-art">‹/›</div><span class="module-label">AI EVALUATION</span><span class="module-count">3 Qs</span><h2>Coding</h2><p>Solve real-world coding problems and improve your logic.</p><button type="button">Start Practice →</button></article>
+                    <article class="module-card hr-card"><div class="module-art">🎤</div><span class="module-label">AI INTERVIEWER</span><span class="module-count">3 Qs</span><h2>HR Interview</h2><p>Practice common HR questions with personalized feedback.</p><button type="button">Start Practice →</button></article>
+                </div>
+                <div class="section-title"><h2>Your Progress</h2><button class="section-view-all" type="button">View all →</button></div>
+                <div class="dashboard-bottom">
+                    <section class="progress-card"><div class="circle-progress"><strong>78%</strong><small>Overall Score</small></div><div class="progress-lines"><div><span>Aptitude</span><b>80%</b><i><em style="width:80%"></em></i></div><div><span>Coding</span><b>67%</b><i><em class="green-bar" style="width:67%"></em></i></div><div><span>HR Interview</span><b>85%</b><i><em class="red-bar" style="width:85%"></em></i></div></div></section>
+                    <section class="weekly-card"><div class="weekly-head"><div><h3>Weekly Activity</h3><small>Keep your momentum going</small></div><strong>71%</strong></div><div class="activity-bars"><i style="height:45%"></i><i style="height:80%"></i><i style="height:60%"></i><i style="height:100%"></i><i style="height:35%"></i><i style="height:65%"></i><i style="height:25%"></i></div><div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></section>
+                </div>
+                <section class="rail-card dashboard-assessments-card"><div class="rail-card-heading"><div><h2>Recent Assessments</h2><p>Your latest practice results</p></div><button type="button">View all →</button></div><div class="rail-table-wrap"><table class="rail-table"><thead><tr><th>Date</th><th>Section</th><th>Score</th><th>Status</th></tr></thead><tbody><tr><td>Oct 26</td><td>Aptitude</td><td><strong>80%</strong></td><td><span class="rail-status">Completed</span></td></tr><tr><td>Oct 25</td><td>Coding</td><td><strong>67%</strong></td><td><span class="rail-status">Completed</span></td></tr><tr><td>Oct 24</td><td>HR Interview</td><td><strong>85%</strong></td><td><span class="rail-status">Completed</span></td></tr><tr><td>Oct 23</td><td>Mock Test</td><td><strong>72%</strong></td><td><span class="rail-status">Completed</span></td></tr></tbody></table></div></section>
+            </main>
+            <aside class="dashboard-side-rail">
+                <section class="rail-card daily-goal-card"><div class="rail-card-heading"><div><h2>Today's Goal</h2><p>Practice at least one section today</p></div><span class="rail-icon">🎯</span></div><div class="rail-goal-count"><div class="rail-goal-ring"><strong>1/1</strong></div><div><strong>1 / 1</strong><small>assessments completed</small></div></div><div class="rail-goal-bar"><i style="width:100%"></i></div><p class="rail-goal-note">Daily goal complete. Great work!</p><button class="rail-action" type="button">View your goal →</button></section>
+                <section class="rail-card recent-activity-card"><div class="rail-card-heading"><div><h2>Recent Activity</h2><p>Your latest practice sessions</p></div><button type="button">View all →</button></div><div class="rail-activity-list"><div class="rail-activity-item"><span class="rail-activity-icon">🧠</span><div><strong>Completed Aptitude</strong><small>2 hours ago</small></div><b>80%</b></div><div class="rail-activity-item"><span class="rail-activity-icon">‹/›</span><div><strong>Started Coding</strong><small>Yesterday</small></div><b>67%</b></div><div class="rail-activity-item"><span class="rail-activity-icon">🎤</span><div><strong>Completed HR Interview</strong><small>2 days ago</small></div><b>85%</b></div><div class="rail-activity-item"><span class="rail-activity-icon">♙</span><div><strong>Updated Profile</strong><small>3 days ago</small></div></div></div></section>
+                <section class="rail-ai-card"><div class="rail-ai-bot" aria-hidden="true"><i></i><i></i><b></b></div><h2>Need help or have a doubt?</h2><p>Your AI assistant is ready to guide your next practice step.</p><button type="button">Ask AI Assistant →</button></section>
+            </aside>
+            </div>
+        </div>
+        <footer class="dashboard-footer"><span class="dashboard-footer-brand"><span class="logo-box">M</span><strong>Interview <b>Mate</b></strong></span><span>Practice&nbsp; • &nbsp;Improve&nbsp; • &nbsp;Succeed</span><small>© 2026 Interview Mate. All rights reserved.</small></footer>
+    </main>
+</section>
+</body>
+</html>

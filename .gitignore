@@ -1,0 +1,8 @@
+.env
+_env
+interview_mate.sqlite3*
+.interview_mate_secret
+__pycache__/
+*.py[cod]
+.venv/
+venv/

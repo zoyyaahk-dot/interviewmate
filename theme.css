@@ -1,0 +1,194 @@
+/* =========================================================
+   Interview Mate – redesign theme (loaded last, overrides)
+   Deep-ocean blue glass UI, cyan accent, robot mascots
+   ========================================================= */
+:root {
+  --im-bg-0: #031325;
+  --im-line: rgba(70, 200, 230, .26);
+  --im-line-strong: rgba(40, 235, 225, .55);
+  --im-cyan: #19f0e6;
+  --im-cyan-2: #00c8f0;
+  --im-violet: #8d63f4;
+  --im-text: #d3e8f5;
+  --im-muted: #86a9c0;
+}
+
+html { background: var(--im-bg-0); }
+:root:not([data-theme="light"]) body {
+  background:
+    radial-gradient(1100px 600px at 12% -8%, rgba(0, 190, 220, .22), transparent 60%),
+    radial-gradient(900px 600px at 100% 8%, rgba(30, 110, 230, .28), transparent 60%),
+    linear-gradient(180deg, #04182c 0%, #052542 52%, #031325 100%) fixed !important;
+  color: var(--im-text);
+}
+
+/* ---------- glass surfaces ---------- */
+:root:not([data-theme="light"]) .landing-feature-card,
+:root:not([data-theme="light"]) .subscription-card,
+:root:not([data-theme="light"]) .module-card,
+:root:not([data-theme="light"]) .stat-card,
+:root:not([data-theme="light"]) .dashboard-welcome-card,
+:root:not([data-theme="light"]) .assessment-box,
+:root:not([data-theme="light"]) .coding-box,
+:root:not([data-theme="light"]) .interview-box,
+:root:not([data-theme="light"]) .login-card,
+:root:not([data-theme="light"]) .profile-detail-card,
+:root:not([data-theme="light"]) .profile-side-card,
+:root:not([data-theme="light"]) .profile-cover-card,
+:root:not([data-theme="light"]) .profile-settings-menu,
+:root:not([data-theme="light"]) .practice-tip,
+:root:not([data-theme="light"]) .hr-feedback-card,
+:root:not([data-theme="light"]) .coding-test-card,
+:root:not([data-theme="light"]) .coding-progress-card,
+:root:not([data-theme="light"]) .coding-problem-panel,
+:root:not([data-theme="light"]) .coding-editor-panel {
+  background: linear-gradient(155deg, rgba(12, 52, 86, .66), rgba(5, 26, 48, .74)) !important;
+  border: 1px solid var(--im-line) !important;
+  box-shadow: 0 18px 50px rgba(0, 8, 20, .38), inset 0 1px 0 rgba(160, 240, 255, .08) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+:root:not([data-theme="light"]) .assessment-box,
+:root:not([data-theme="light"]) .coding-box,
+:root:not([data-theme="light"]) .interview-box { border-radius: 22px !important; }
+
+/* ---------- nav bars ---------- */
+:root:not([data-theme="light"]) .landing-nav,
+:root:not([data-theme="light"]) .practice-nav,
+:root:not([data-theme="light"]) .topbar {
+  background: rgba(4, 22, 40, .82) !important;
+  border-bottom: 1px solid var(--im-line) !important;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+:root:not([data-theme="light"]) .sidebar {
+  background: linear-gradient(180deg, rgba(5, 30, 54, .96), rgba(3, 18, 34, .98)) !important;
+  border-right: 1px solid var(--im-line) !important;
+}
+
+/* ---------- primary buttons ---------- */
+:root:not([data-theme="light"]) .primary-btn,
+:root:not([data-theme="light"]) .hero-primary-btn,
+:root:not([data-theme="light"]) .landing-start-btn,
+:root:not([data-theme="light"]) .subscribe-btn {
+  background: linear-gradient(90deg, #12f2e4, #00c9f2) !important;
+  color: #032033 !important;
+  font-weight: 800;
+  box-shadow: 0 8px 28px rgba(0, 230, 225, .32);
+}
+:root:not([data-theme="light"]) .primary-btn:hover,
+:root:not([data-theme="light"]) .hero-primary-btn:hover,
+:root:not([data-theme="light"]) .landing-start-btn:hover,
+:root:not([data-theme="light"]) .subscribe-btn:hover {
+  box-shadow: 0 10px 34px rgba(0, 240, 230, .5);
+}
+
+/* ---------- landing: each feature/plan card gets its own hue ---------- */
+:root:not([data-theme="light"]) .landing-feature-card:nth-child(1) { background: linear-gradient(155deg, rgba(10, 120, 120, .5), rgba(5, 40, 60, .78)) !important; border-color: rgba(30, 230, 200, .5) !important; }
+:root:not([data-theme="light"]) .landing-feature-card:nth-child(2) { background: linear-gradient(155deg, rgba(20, 90, 200, .5), rgba(5, 30, 70, .8)) !important; border-color: rgba(60, 160, 255, .55) !important; }
+:root:not([data-theme="light"]) .landing-feature-card:nth-child(3) { background: linear-gradient(155deg, rgba(110, 70, 220, .5), rgba(24, 16, 70, .82)) !important; border-color: rgba(150, 110, 255, .55) !important; }
+
+:root:not([data-theme="light"]) .subscription-card:nth-child(1) { border-color: rgba(30, 230, 200, .5) !important; }
+:root:not([data-theme="light"]) .subscription-card:nth-child(2) { border-color: rgba(60, 170, 255, .75) !important; box-shadow: 0 0 0 1px rgba(60,170,255,.3), 0 22px 60px rgba(20,110,230,.35) !important; }
+:root:not([data-theme="light"]) .subscription-card:nth-child(3) { border-color: rgba(150, 110, 255, .6) !important; }
+:root:not([data-theme="light"]) .popular-badge { background: linear-gradient(90deg, #1db4ff, #19f0e6) !important; color: #032033 !important; }
+
+/* dashboard module cards */
+:root:not([data-theme="light"]) .module-card.aptitude-card { background: linear-gradient(155deg, rgba(10,120,120,.55), rgba(5,40,60,.8)) !important; }
+:root:not([data-theme="light"]) .module-card.coding-card { background: linear-gradient(155deg, rgba(20,90,200,.55), rgba(5,30,70,.82)) !important; }
+:root:not([data-theme="light"]) .module-card.hr-card { background: linear-gradient(155deg, rgba(110,70,220,.55), rgba(24,16,70,.84)) !important; }
+
+/* ---------- inputs ---------- */
+:root:not([data-theme="light"]) .input-box,
+:root:not([data-theme="light"]) .profile-form-grid input,
+:root:not([data-theme="light"]) .password-input {
+  background: rgba(3, 22, 40, .72) !important;
+  border: 1px solid var(--im-line) !important;
+  border-radius: 14px !important;
+}
+:root:not([data-theme="light"]) .input-box:focus-within,
+:root:not([data-theme="light"]) .profile-form-grid input:focus {
+  border-color: var(--im-line-strong) !important;
+  box-shadow: 0 0 0 3px rgba(25, 240, 230, .14) !important;
+}
+:focus-visible { outline: 2px solid var(--im-cyan); outline-offset: 2px; }
+
+/* =========================================================
+   MODULE HERO  (Aptitude / Coding / HR) with robot mascots
+   ========================================================= */
+:root:not([data-theme="light"]) .assessment-header.module-hero {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  overflow: visible;
+  padding: 22px 30px !important;
+  margin-bottom: 18px;
+  border-radius: 22px;
+  border: 1px solid var(--im-line);
+  background:
+    radial-gradient(520px 220px at 88% 40%, rgba(25, 240, 230, .16), transparent 70%),
+    linear-gradient(120deg, rgba(8, 44, 74, .7), rgba(5, 24, 44, .78));
+}
+:root:not([data-theme="light"]) .module-hero h1 { margin: 8px 0 6px; font-size: clamp(28px, 3.2vw, 40px); }
+:root:not([data-theme="light"]) .module-hero p { max-width: 520px; color: var(--im-muted); }
+
+.module-bot {
+  position: relative;
+  flex: 0 0 auto;
+  width: clamp(170px, 20vw, 250px);
+  height: clamp(150px, 17vw, 210px);
+  margin: -34px 6px -10px 0;
+  pointer-events: none;
+}
+.module-bot svg { width: 100%; height: 100%; overflow: visible; filter: drop-shadow(0 14px 22px rgba(0, 220, 230, .28)); }
+.module-bot .bot-float { animation: botFloat 4.2s ease-in-out infinite; }
+.module-bot .bot-eye { animation: botBlink 5s infinite; transform-box: fill-box; transform-origin: center; }
+.module-bot .bot-pulse { animation: botPulse 2.4s ease-in-out infinite; }
+.module-bot .bot-wave { animation: botWave 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: 20% 90%; }
+.module-bot .bubble {
+  position: absolute; top: 0; right: calc(100% - 60px);
+  padding: 7px 12px; border-radius: 14px 14px 4px 14px;
+  background: rgba(8, 40, 68, .92); border: 1px solid var(--im-line-strong);
+  color: var(--im-cyan); font: 600 14px/1.2 "Segoe Script", "Brush Script MT", cursive;
+  white-space: nowrap; transform: rotate(-4deg);
+}
+@keyframes botFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+@keyframes botBlink { 0%,92%,100% { transform: scaleY(1); } 95% { transform: scaleY(.1); } }
+@keyframes botPulse { 0%,100% { opacity: .5; } 50% { opacity: 1; } }
+@keyframes botWave  { 0%,100% { transform: rotate(0); } 50% { transform: rotate(-14deg); } }
+
+/* small bot used in the HR chat header */
+.mini-bot { width: 46px; height: 46px; flex: 0 0 auto; }
+.mini-bot svg { width: 100%; height: 100%; }
+
+/* ---------- login ---------- */
+:root:not([data-theme="light"]) .login-page { background: transparent !important; }
+:root:not([data-theme="light"]) .login-container {
+  background: linear-gradient(155deg, rgba(6, 34, 60, .72), rgba(3, 18, 34, .8)) !important;
+  border: 1px solid var(--im-line) !important;
+  box-shadow: 0 30px 90px rgba(0, 10, 25, .55) !important;
+}
+
+/* ---------- motion preferences ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .module-bot .bot-float, .module-bot .bot-eye, .module-bot .bot-pulse, .module-bot .bot-wave { animation: none !important; }
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 760px) {
+  .assessment-header.module-hero { flex-direction: column-reverse; align-items: flex-start; padding: 18px; }
+  .module-bot { width: 150px; height: 130px; margin: -8px 0 0 auto; }
+  .module-bot .bubble { display: none; }
+}
+
+/* let the ocean gradient show through page wrappers */
+:root:not([data-theme="light"]) .assessment-page,
+:root:not([data-theme="light"]) .result-page,
+:root:not([data-theme="light"]) #landingPage,
+:root:not([data-theme="light"]) .main-content,
+:root:not([data-theme="light"]) .landing-hero,
+:root:not([data-theme="light"]) .why-section,
+:root:not([data-theme="light"]) .features-section,
+:root:not([data-theme="light"]) .subscription-section { background: transparent !important; }
